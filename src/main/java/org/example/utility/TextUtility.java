@@ -1,4 +1,4 @@
-package org.example;
+package org.example.utility;
 
 import org.apache.commons.codec.digest.MurmurHash2;
 import org.apache.commons.lang3.StringUtils;
@@ -10,21 +10,21 @@ import java.util.*;
 import java.util.regex.Pattern;
 
 public class TextUtility {
-    private static final Pattern SPECIAL_CHARACTERS = Pattern.compile("[^a-zа-яёЁ\\s]");
+    private static final Pattern ALLOW_CHARACTERS = Pattern.compile("[^a-zа-яёЁ\\s]");
 
     public static String canonicalizeString(String text) {
         if (StringUtils.isBlank(text)) {
             return "";
         }
-        text = text.toLowerCase().replaceAll(",|\\.", " ").replaceAll("\\r|\\n", "").trim();
-        text = SPECIAL_CHARACTERS.matcher(text).replaceAll("");
+        text = text.toLowerCase().replaceAll(",|\\.", " ").trim();
+        text = ALLOW_CHARACTERS.matcher(text).replaceAll("");
         return text.toLowerCase().trim();
     }
 
-    public static String computeMinHash(String shingleText, int minHashNumber) {
+    public static String computeStringMinHash(String text, int hashIteratesNumber) {
         List<Long> hashes = new ArrayList<>();
-        for (int i = 0; i < minHashNumber; i++) {
-            byte[] shingleBytes = shingleText.getBytes();
+        for (int i = 0; i < hashIteratesNumber; i++) {
+            byte[] shingleBytes = text.getBytes();
             hashes.add(MurmurHash2.hash64(shingleBytes, shingleBytes.length, i));
         }
         Collections.sort(hashes);

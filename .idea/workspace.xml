@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="161f9417-222a-4869-8202-d463fae49217" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Deduplicator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/service/Deduplicator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Shingle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/dto/Shingle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/TextUtility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/utility/TextUtility.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,30 +43,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/user/Desktop/projects/text-duplicates-remover/src/main/resources",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "File.Encoding"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/user/Desktop/projects/text-duplicates-remover/src/main/resources&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;File.Encoding&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\user\Desktop\projects\text-duplicates-remover\src\main\resources" />
     </key>
   </component>
   <component name="RunManager" selected="Application.org.example.Main">
-    <configuration name="org.example.Deduplicator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.Deduplicator" />
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.Main" />
       <module name="text-duplicates-remover" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.*" />
+          <option name="PATTERN" value="org.example.dto.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -74,12 +74,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="org.example.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.Main" />
+    <configuration name="org.example.service.Deduplicator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.service.Deduplicator" />
       <module name="text-duplicates-remover" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.*" />
+          <option name="PATTERN" value="org.example.dto.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -90,7 +90,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.org.example.Main" />
-        <item itemvalue="Application.org.example.Deduplicator" />
+        <item itemvalue="Application.org.example.service.Deduplicator" />
       </list>
     </recent_temporary>
   </component>
@@ -107,6 +107,7 @@
       <option name="presentableId" value="Default" />
       <updated>1733044999077</updated>
       <workItem from="1733045000932" duration="7786000" />
+      <workItem from="1733062628843" duration="630000" />
     </task>
     <servers />
   </component>
@@ -123,16 +124,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Deduplicator.java</url>
-          <line>44</line>
-          <option name="timeStamp" value="22" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
